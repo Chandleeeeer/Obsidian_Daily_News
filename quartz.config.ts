@@ -89,10 +89,11 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // Plugin.CustomOgImages(),  // 禁用：避免不支持 emoji 导致构建失败
     ],
   },
 }
 
 export default config
+
 
